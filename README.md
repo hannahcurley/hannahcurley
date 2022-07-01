@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @hannahcurley
-- 👀 I’m interested in -> listening to music, dance, and binge watching YouTube
+- 👀 I’m interested in -> 
 - 🌱 I’m currently learning -> HTML/CSS
 - 💞️ I’m looking to collaborate on -> N/A
 - 📫 How to reach me -> hanncurley30@gmail.com
