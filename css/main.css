@@ -1,0 +1,503 @@
+x/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* MAIN DOCUMENT */
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(11, 37, 69) 0%, rgb(19, 49, 92) 50%, rgb(141, 169, 196) 100%);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+header {
+  background: rgb(11, 37, 69);
+  width: 100%;
+  position: fixed;
+}
+h1 {
+  font-family: 'Merriweather', serif;
+  color: rgb(238, 244, 237);
+  text-align: center;
+  font-size: 50px;
+}
+section {
+  width: 100%;
+  height: 80%;
+}
+h4 {
+  font-family: 'Merriweather', serif;
+  color: rgb(238, 244, 237); 
+  text-align: center;
+  font-size: 26px;
+}
+.center {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.break {
+  width: 100%;
+  height: 10vh;
+}
+
+/* NAVBAR */
+nav {
+  position: relative;
+  overflow: hidden;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(222, 196, 161);
+  border:rgb(222, 196, 161) 1px solid;
+  border-radius: 5px;
+  color: rgb(11, 37, 69);
+  padding: 3px 5px 3px 5px;
+}
+.title a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.rightnavbtn {
+  float: right;
+}
+.navbtn, :visited {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: auto 20px auto 20px;
+  color: rgb(11, 37, 69);
+}
+h2:hover {
+  transform: translate(5px, 5px);
+  box-shadow: 5px 5px rgb(238, 244, 237);
+}
+#mobilenav {
+  display: none;
+}
+
+/* INTRO SECTION */
+#frog {
+  width: 25vh;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+}
+h3 {
+  font-family: 'Merriweather', serif;
+  color: rgb(238, 244, 237);
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+}
+#intro-text {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+
+/* ABOUT SECTION */
+#pfp {
+  width: 25vh;
+  height: auto;
+  border:rgb(238, 244, 237) 2px double;
+}
+#about-info {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(238, 244, 237);
+  display: inline-block;
+  list-style: inside;
+}
+#about-info, #works-ex {
+  font-size: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+/* WORKS SECTION */
+#works-ex, .text, :visited {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(238, 244, 237); 
+  font-style: italic;
+  list-style: inside;
+}
+.project {
+  width: 40vh;
+  height: auto;
+  display: inline-block;
+  border:rgb(238, 244, 237) 2px double;
+}
+
+/* RESUME SECTION */
+embed {
+  width: 75%;
+  height: 500px;
+  margin-left: 12.5%;
+  border:rgb(238, 244, 237) 2px double;
+}
+
+/* CONTACT SECTION */
+#contact-logos {
+  display: table;
+  width: 30vh;
+  height: auto;
+  margin-bottom: 10vh;
+}
+th {
+  padding: 20px 20px;
+}
+.socials, :visited {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(238, 244, 237);
+  width: 10px;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgb(11, 37, 69);
+  width: 100%;
+  position: absolute;
+}
+#footer, #footer:visited {
+  text-decoration: none;
+  color: rgb(238, 244, 237); 
+}
+h5 {
+  font-family: 'Merriweather', serif;
+  color: rgb(238, 244, 237); 
+  text-align: center;
+  font-size: 24px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 850px) {
+  nav {
+    display: none;
+  }
+  #frog {
+    padding-top: 20%;
+  }
+  #mobilenav {
+    display: contents;
+    overflow: hidden;
+    position: relative;
+  }
+  #mobilenav #mobilebtns {
+    display: none;
+  }
+  #mobilenav a:not(.active) {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(222, 196, 161);
+    border:rgb(222, 196, 161) 1px solid;
+    border-radius: 5px;
+    color: rgb(11, 37, 69);
+    padding: 3px 5px 3px 5px;
+    margin: 2vh auto 2vh auto;
+  }
+  #mobilenav a.menu {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(222, 196, 161);
+    border:rgb(222, 196, 161) 1px solid;
+    border-radius: 5px;
+    color: rgb(11, 37, 69);
+    padding: 3px 5px 3px 5px;
+    display: block;
+    position: absolute;
+    right: 2vh;
+    top: 0;
+    font-size: 20px;
+  }
+  .active {
+    text-decoration: none;
+    display: block;
+    background-color: rgb(11, 37, 69);
+    color: rgb(238, 244, 237);
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    padding: 5px 5px 5px 10px;
+  }
+  #mobilenav a:not(.active):hover, #mobilenav a.menu:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 5px 5px rgb(238, 244, 237);
+  }
+
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
